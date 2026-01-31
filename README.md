@@ -1,5 +1,5 @@
 # Project Title
-Signal in the Glade — Game States
+Side Quest Week 3: Signal in the Glade — Game States
 
 ## Group Members
 - Full Name: Suyao Liu, WatID: s226liu, Student Number: 21069335
