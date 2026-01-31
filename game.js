@@ -5,15 +5,36 @@ const storyBeats = [
   {
     text: "A stranger appears by the fallen antenna.",
     options: [
-      { label: "Offer your tools", delta: 12 },
+      { label: "Offer your tools", delta: 10 },
       { label: "Hold the tools back", delta: -8 },
     ],
   },
   {
     text: "The beacon hums. The forest listens.",
     options: [
-      { label: "Ask about your crew", delta: 10 },
+      { label: "Ask about your crew", delta: 8 },
       { label: "Take the beacon and run", delta: -10 },
+    ],
+  },
+  {
+    text: "A second signal echoes from deeper in the fog.",
+    options: [
+      { label: "Follow the echo", delta: 6 },
+      { label: "Stay and secure the beacon", delta: -4 },
+    ],
+  },
+  {
+    text: "You find a cache with a logbook and a locked case.",
+    options: [
+      { label: "Read the logbook together", delta: 7 },
+      { label: "Pocket the key quietly", delta: -6 },
+    ],
+  },
+  {
+    text: "The stranger asks for a final decision at the ridge.",
+    options: [
+      { label: "Share the map coordinates", delta: 9 },
+      { label: "Erase the trail behind you", delta: -8 },
     ],
   },
 ];

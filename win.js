@@ -3,6 +3,7 @@ const enterWin = () => {
   const title = createP("Reunion");
   title.parent(uiRoot);
   title.addClass("ui-title");
+  addCaption(`Trust: ${trust}`);
   addCaption("Your trust unlocked the hidden camp. The crew steps out.");
   addButton("Play again", () => {
     trust = 50;

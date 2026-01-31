@@ -3,6 +3,7 @@ const enterLose = () => {
   const title = createP("Silence");
   title.parent(uiRoot);
   title.addClass("ui-title");
+  addCaption(`Trust: ${trust}`);
   addCaption("The beacon fades. The forest keeps its secrets.");
   addButton("Try again", () => {
     trust = 50;

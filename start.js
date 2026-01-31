@@ -5,6 +5,7 @@ const enterStart = () => {
   const title = createP("Signal in the Glade");
   title.parent(uiRoot);
   title.addClass("ui-title");
+  addCaption(`Trust: ${trust}`);
   addCaption("A short tale about trust. Choose how to approach the beacon.");
 
   startButtons = [
