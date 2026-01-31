@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signal in the Glade — Signal Break</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script defer src="../common.js"></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="title">
+        <p class="kicker">Signal Break</p>
+        <h1>The Broadcast Splits</h1>
+        <p class="lede">
+          The beacon locks onto your heartbeat, deciding who to reveal.
+        </p>
+      </header>
+
+      <section class="panel">
+        <p>
+          You feel the frequency test your intentions. The forest waits.
+        </p>
+        <p class="statline">
+          Trust: <span data-stat="trust">--</span>
+        </p>
+        <p class="footer">
+          If nothing happens, the forest expects you to choose an ending.
+        </p>
+        <div
+          data-ending
+          data-min="60"
+          data-max="100"
+          data-good="ending-good.html"
+          data-bad="ending-bad.html"
+        ></div>
+        <div class="actions">
+          <a class="choice" href="ending-good.html">Walk into the light</a>
+          <a class="choice secondary" href="ending-bad.html">Fade into the fog</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
