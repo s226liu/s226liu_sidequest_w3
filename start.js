@@ -5,13 +5,15 @@ const enterStart = () => {
   const title = createP("Signal in the Glade");
   title.parent(uiRoot);
   title.addClass("ui-title");
-  addCaption(`Trust: ${trust}`);
+  addCaption(`Trust: ${trust}  |  Health: ${health}  |  Energy: ${energy}`);
   addCaption("A short tale about trust. Choose how to approach the beacon.");
 
   startButtons = [
     addButton("Begin the walk", () => setState("game")),
     addButton("Start with high trust", () => {
       trust = 70;
+      health = 75;
+      energy = 75;
       setState("game");
     }, true),
   ];

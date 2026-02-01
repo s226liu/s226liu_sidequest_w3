@@ -1,11 +1,16 @@
 let currentState = "start";
 let trust = 50;
+let health = 75;
+let energy = 75;
 let uiRoot;
 
 const TRUST_MIN = 0;
 const TRUST_MAX = 100;
+const STAT_MIN = 0;
+const STAT_MAX = 100;
 
 const clampTrust = (value) => Math.min(TRUST_MAX, Math.max(TRUST_MIN, value));
+const clampStat = (value) => Math.min(STAT_MAX, Math.max(STAT_MIN, value));
 
 const setState = (nextState) => {
   if (currentState === nextState) return;

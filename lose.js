@@ -3,14 +3,18 @@ const enterLose = () => {
   const title = createP("Silence");
   title.parent(uiRoot);
   title.addClass("ui-title");
-  addCaption(`Trust: ${trust}`);
+  addCaption(`Trust: ${trust}  |  Health: ${health}  |  Energy: ${energy}`);
   addCaption("The beacon fades. The forest keeps its secrets.");
   addButton("Try again", () => {
     trust = 50;
+    health = 75;
+    energy = 75;
     setState("start");
   });
   addButton("Re-enter with low trust", () => {
     trust = 30;
+    health = 55;
+    energy = 55;
     setState("game");
   }, true);
 };

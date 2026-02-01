@@ -3,10 +3,12 @@ const enterWin = () => {
   const title = createP("Reunion");
   title.parent(uiRoot);
   title.addClass("ui-title");
-  addCaption(`Trust: ${trust}`);
+  addCaption(`Trust: ${trust}  |  Health: ${health}  |  Energy: ${energy}`);
   addCaption("Your trust unlocked the hidden camp. The crew steps out.");
   addButton("Play again", () => {
     trust = 50;
+    health = 75;
+    energy = 75;
     setState("start");
   });
   addButton("Continue with new trust", () => setState("game"), true);
